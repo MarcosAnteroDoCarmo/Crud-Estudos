@@ -6,8 +6,7 @@
   "scripts": {
     "start": "node dist/server/server.js",
     "build": "yarn tsc --build",
-    "dev": "nodemon src/server/server.ts",
-    "setup": "yarn add @types/node typescript && yarn add ts-node -D && yarn tsc --init"
+    "dev": "nodemon src/server/server.ts"
   },
   "dependencies": {
     "@types/node": "^17.0.40",

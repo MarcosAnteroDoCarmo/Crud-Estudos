@@ -1,7 +1,7 @@
 import express from "express";
-import cors from "cors";
-import bodyParser from "body-parser";
 import router from "../router/userRoutes";
+import bodyParser from "body-parser";
+import cors from "cors";
 
 const app = express();
 
@@ -12,10 +12,10 @@ app.use(bodyParser.urlencoded({ extended: false }));
 
 app.use(router);
 
-const portaDoServidor = 3002;
+const ServerPort = 3002;
 
 app.post("/", (req, res) => res.send(req.body)); 
 
-app.listen(portaDoServidor, () => {
-  console.log(`O servidor esta rodando na porta ${portaDoServidor}`);
+app.listen(ServerPort, () => {
+  console.log(`The server is running on port ${ServerPort}`);
 });
